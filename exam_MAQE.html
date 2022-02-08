@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam By Kittipong Kraseatho</title>
+</head>
+<style>
+    body {
+        padding: 25px;
+    }
+
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: 2px;
+    }
+
+    .grid-container>div {
+        background-color: #ffffff;
+        box-shadow: 3px 3px 3px 3px rgb(199, 198, 198) inset;
+        border-radius: 5px;
+        margin: 16px;
+        padding: 50px;
+        font-size: 40px;
+        height: 30px;
+        font-family: sans;
+        color: #89d2ed;
+        text-shadow: -1px 0 #d0d0d0, 0 1px #d0d0d0, 1px 0 #d0d0d0, 0 -1px #d0d0d0;
+    }
+
+    .module {
+        width: 350px;
+        height: 350px;
+        background: #89d2ed;
+        background-image: linear-gradient(#89d2ed, #89e6ed);
+        position: relative;
+        border: 7px solid #ffffff;
+        border-radius: 25px;
+        margin: 20px;
+    }
+
+    .module:after {
+        content: '';
+        position: absolute;
+        border-radius: 25px;
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+        background: #89d2ed;
+        z-index: -1;
+    }
+
+    .module:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        background: rgb(255, 255, 255);
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 56%;
+        height: 58%;
+        opacity: 20%;
+    }
+</style>
+
+<body>
+    <div class="module">
+        <div class="grid-container">
+            <div>M</div>
+            <div>A</div>
+            <div>Q</div>
+            <div>E</div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
